@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/experiment_search_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Widget.AppCompat.SearchView"
+    tools:context=".ui.search.SearchActivity">
+
+    <SearchView
+        android:id="@+id/search_experiment_query"
+        android:layout_width="414dp"
+        android:layout_height="98dp"
+        android:background="#57009688"
+        android:queryHint="Search experiments..."
+        app:layout_constraintBottom_toTopOf="@+id/search_results_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:iconifiedByDefault="false" />
+
+    <ListView
+        android:id="@+id/search_results_list"
+        android:layout_width="411dp"
+        android:layout_height="617dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
